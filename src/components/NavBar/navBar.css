@@ -1,0 +1,47 @@
+.NavBar {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  width: 100%;
+}
+
+.menu-icon {
+  font-size: 24px;
+}
+.menu-icon:hover {
+  transform: scale(1.1);
+  fill: var(--color-secondary);
+  transition: all 0.5s;
+}
+
+.mobile--menu {
+  display: none;
+}
+
+.web--menu {
+  display: flex;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 720px) {
+  .mobile--menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon--container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

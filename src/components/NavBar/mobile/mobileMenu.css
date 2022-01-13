@@ -1,0 +1,21 @@
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+}
+.mobile--option {
+  margin-top: 10px;
+}
+.mobile--option a {
+  text-decoration: none;
+  color: var(--color-text);
+  align-items: center;
+  font-size: 24px;
+}
+.mobileMenu li {
+  list-style: none;
+}
+
+.mobile--option :hover {
+  color: var(--color-secondary);
+  transform: scale(1.1);
+}

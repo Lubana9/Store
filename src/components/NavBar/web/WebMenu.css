@@ -1,0 +1,12 @@
+.WebMenu {
+  display: flex;
+  align-items: center;
+}
+.web--option {
+  margin-right: 24px;
+}
+.web--option :hover {
+  fill: var(--color-secondary);
+  transform: scale(1.1);
+  transition: all 0.3s;
+}

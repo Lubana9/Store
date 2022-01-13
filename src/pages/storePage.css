@@ -5,8 +5,12 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
 :root {
   --color-background: #fff;
+  --color-text: #000;
   --color-primary: #3333;
   --color-secondary: #828282;
 }
@@ -16,7 +20,7 @@ html {
   margin: auto;
 }
 
-@media screen and (max-width: 1391px) {
+@media screen and (min-width: 1391px) {
   .storePage {
     width: 70%;
   }
