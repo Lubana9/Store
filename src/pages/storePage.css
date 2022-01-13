@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-background: #fff;
+  --color-primary: #3333;
+  --color-secondary: #828282;
+}
+.storePage {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+@media screen and (max-width: 1391px) {
+  .storePage {
+    width: 70%;
+  }
+}
