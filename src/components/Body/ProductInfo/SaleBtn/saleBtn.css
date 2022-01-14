@@ -1,0 +1,11 @@
+.SaleBtn {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.sale--button {
+  background: transparent;
+  border: 1px solid var(--color-text);
+  padding: 6px 8px;
+  margin-right: 10px;
+}

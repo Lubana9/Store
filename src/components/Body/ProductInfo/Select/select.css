@@ -1,0 +1,18 @@
+.select {
+  background: transparent;
+  border: 1px solid var(--color-text);
+  font-size: 16px;
+  padding: 10px 100px 10px 10px;
+  margin-bottom: 10px;
+}
+.select:focus,
+::selection {
+  border: 1px solid var(--color-primary);
+}
+
+.select .select--option {
+  background: transparent;
+  border: 1px solid var(--color-text);
+  font-size: 16px;
+  padding: 10px 100px 10px 10px;
+}

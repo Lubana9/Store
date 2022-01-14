@@ -8,10 +8,13 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
 }
+button {
+  cursor: pointer;
+}
 :root {
   --color-background: #fff;
   --color-text: #000;
-  --color-primary: #3333;
+  --color-primary: #333333;
   --color-secondary: #828282;
 }
 .storePage {
