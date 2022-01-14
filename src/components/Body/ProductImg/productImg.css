@@ -1,5 +1,6 @@
 .baby--img {
-  height: 500px;
+  width: 100%;
+  object-fit: cover;
 }
 @media screen and (max-width: 720px) {
   .product--img {
