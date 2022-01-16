@@ -1,11 +1,18 @@
 .NavBar {
+  position: sticky;
+  top: 0;
+
+  background-color: var(--color-background);
+}
+.NavBar--container {
   display: flex;
-  flex: 1;
   justify-content: space-between;
   align-items: center;
   padding: 12px;
 }
-
+.hidden {
+  visibility: hidden;
+}
 .menu {
   display: flex;
   justify-content: flex-end;

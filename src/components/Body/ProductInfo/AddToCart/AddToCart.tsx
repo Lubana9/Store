@@ -25,7 +25,9 @@ const AddToCart = () => {
         </button>
 
         {count}
-        <button onClick={() => setCount(count + 1)}>+</button>
+        <button className="inc-btn" onClick={() => setCount(count + 1)}>
+          +
+        </button>
       </div>
       <div className="add_to_bag">
         <button className="add--btn" onClick={handelAddToCart}>

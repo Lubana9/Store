@@ -30,6 +30,9 @@
   border: none;
   font-size: 14px;
 }
+.add_to_bag button:hover {
+  opacity: 0.9;
+}
 
 .add--btn {
   padding: 12px 28px;
@@ -40,6 +43,15 @@
   padding: 12px;
 }
 
+.inc-btn:hover {
+  color: #90ee90;
+  opacity: 0.5;
+}
+
+.dec-btn:hover {
+  color: #ffcccb;
+  opacity: 0.5;
+}
 @media screen and (max-width: 720px) {
   .AddToCart {
     flex-direction: column;

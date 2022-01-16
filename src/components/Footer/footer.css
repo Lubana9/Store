@@ -1,0 +1,99 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0;
+  align-items: baseline;
+}
+
+.heading-footer {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+ul {
+  cursor: pointer;
+}
+.footer li {
+  list-style: none;
+}
+
+.list--foter:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  color: var(--color-secondary);
+}
+
+.list--foter {
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.footer--input {
+  border: none;
+  border-bottom: 1px solid var(--color-secondary);
+  padding: 12px 20px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.footer--input:focus {
+  border-bottom: 1px solid #66ccff;
+}
+.footer--submit {
+  outline: none;
+  border: 1px solid;
+  cursor: pointer;
+  background: transparent;
+  padding: 8px 28px;
+  font-size: 14px;
+  width: fit-content;
+}
+.footer--submit:hover {
+  border: 1px solid #66ccff;
+  color: #66ccff;
+}
+.footer--from {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.email--input {
+  display: flex;
+  align-items: baseline;
+}
+.email--input button {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 200;
+  color: var(--color-secondary);
+}
+
+.email--input button:hover {
+  color: #ffcccb;
+}
+
+@media screen and (max-width: 720px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+  .footer div:nth-of-type(3) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+  .footer--from {
+    margin-top: 20px;
+  }
+  .email--input {
+    width: 100%;
+  }
+}

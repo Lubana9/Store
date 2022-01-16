@@ -53,6 +53,9 @@
   font-size: 14px;
   color: var(--color-text);
 }
+.url--btn a:hover {
+  color: var(--color-secondary);
+}
 
 .description {
   margin-bottom: 10px;
