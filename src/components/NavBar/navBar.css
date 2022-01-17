@@ -1,8 +1,13 @@
 .NavBar {
-  position: sticky;
-  top: 0;
-
   background-color: var(--color-background);
+}
+.visible {
+  visibility: visible;
+  transition: all 0.3s;
+}
+.hidden {
+  visibility: hidden;
+  transition: all 0.3s;
 }
 .NavBar--container {
   display: flex;
@@ -10,9 +15,7 @@
   align-items: center;
   padding: 12px;
 }
-.hidden {
-  visibility: hidden;
-}
+
 .menu {
   display: flex;
   justify-content: flex-end;
@@ -45,6 +48,7 @@
   .mobile--menu {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   .icon--container {

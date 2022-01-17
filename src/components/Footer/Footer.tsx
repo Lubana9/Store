@@ -32,9 +32,9 @@ const Footer: React.FC = () => {
       </div>
       <div>
         <form className="footer--from" onSubmit={handleSubmit}>
-          <label className="heading-footer">
+          <div className="heading-footer">
             Узнайте первыми о новинках и акциях
-          </label>
+          </div>
           <div className="email--input">
             <input
               className="footer--input"

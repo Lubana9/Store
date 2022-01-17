@@ -62,6 +62,7 @@ ul {
 .email--input {
   display: flex;
   align-items: baseline;
+  width: 100%;
 }
 .email--input button {
   background: transparent;

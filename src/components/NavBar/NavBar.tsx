@@ -7,9 +7,10 @@ const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [show, setshow] = useState<boolean>(true);
   const controllNavbar = () => {
-    if (window.scrollY >= 80) {
-      setshow(false);
-    } else setshow(true);
+    const lastScroll = document.body.getBoundingClientRect().top;
+    if (window.scrollY <= lastScroll) {
+      setshow(true);
+    } else setshow(false);
   };
   useEffect(() => {
     window.addEventListener("scroll", controllNavbar);
@@ -18,7 +19,7 @@ const NavBar: React.FC = () => {
     };
   }, []);
   return (
-    <nav className={`NavBar ${!show && "hidden"}`}>
+    <nav className={`NavBar ${show ? "visible" : "hidden"}}`}>
       <div className="NavBar--container">
         {!isOpen && <div className="logo">LOGO</div>}
         <div className="menu">
